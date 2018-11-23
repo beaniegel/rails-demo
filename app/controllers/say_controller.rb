@@ -8,6 +8,7 @@ class SayController < ApplicationController
     @s1 = "I can also "
     @s2 = "do maths"
     @message = @s1 + @s2
+    @files = Dir.glob('*')
   end
 
   def goodbye
